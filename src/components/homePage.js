@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import image from '../images/image.jpg'
-import logo from '../images/logo192.png'
+import image from '../images/image.png'
+
 
  
 export class homePage extends Component {
@@ -10,16 +10,18 @@ export class homePage extends Component {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src={image} class="d-block w-100" alt="..."/>
-      <div style={{marginBottom:'400px'}} class="carousel-caption">
-        <img src={logo} alt="..."/>
-        <button class="btn"><a class="link" href='/Project'>Voir Plus</a></button>
+      <div style={{marginBottom:'200px'}}  class="carousel-caption">
+          <h1>A PROPOS DE NOUS</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel laudantium nisi, reprehenderit ratione quasi aspernatur nulla mollitia dolor quod voluptates distinctio incidunt tenetur. Architecto quod pariatur minima eveniet, molestias mollitia?</p>
+        <button style={{backgroundColor:'white'}} class="btn"><a style={{backgroundColor:'white'}} class="link" href='/Project'>Voir Plus</a></button>
       </div>
     </div>
     <div class="carousel-item">
       <img src={image} class="d-block w-100" alt="..."/>
-      <div style={{marginBottom:'400px'}} class="carousel-caption">
-        <img src={logo} alt="..."/>
-        <button class="btn"><a class="link" href='/Project'>Voir Plus</a></button>
+      <div style={{marginBottom:'200px'}} class="carousel-caption">
+          <h1>Contacter Nous</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel laudantium nisi, reprehenderit ratione quasi aspernatur nulla mollitia dolor quod voluptates distinctio incidunt tenetur. Architecto quod pariatur minima eveniet, molestias mollitia?</p>
+        <button style={{backgroundColor:'white'}} class="btn"><a class="link" href='/Project'>Voir Plus</a></button>
       </div>
     </div>
   </div>
