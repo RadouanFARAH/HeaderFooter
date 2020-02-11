@@ -1,30 +1,28 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import {Nav, Navbar} from 'react-bootstrap' 
+import {Route, BrowserRouter as Router} from 'react-router-dom';
+
+import Header from './components/header';
+import Login from './components/login';
+import SignUp from './components/signup';
+import HomePage from './components/homePage'
 
 
 function App() {
   return (
-    <div className="container">
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-    <Navbar.Brand href="/">Urbateur</Navbar.Brand>
-    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav">
-      <Nav className="ml-auto">
-        <Nav.Link style={{backgroundColor:'white', color:'black'}} href="#deets">Qui Somme Nous</Nav.Link>
-        <Nav.Link style={{backgroundColor:'white', color:'black'}}  eventKey={2} href="#memes">
-          Nous-Contacter
-        </Nav.Link>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
-  <footer className="footer text-center">
-    <div className="container">
-      <p className="footer-text">Footer</p>
+    <Router>
+    <div style={{height:'100vh'}}>
+        <Header />
+        <HomePage />
+        <div style={{marginTop:'7%'}}>
+        <Route path="/signin" component={Login} />
+        </div>
+        <div style={{marginTop:'2%'}}>>
+        <Route path="/signup" component={SignUp} />
+        </div>
     </div>
-  </footer>
-  </div>
+    </Router>
   );
 }
 

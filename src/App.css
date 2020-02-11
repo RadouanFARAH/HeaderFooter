@@ -1,10 +1,11 @@
-.container{
-  margin:0;
+.Navbar{
+  color: white;
 }
 
-.footer .container {
+.footer {
   position: absolute;
   bottom: 0;
   background-color: darkslategrey;
   color:white;
 }
+
